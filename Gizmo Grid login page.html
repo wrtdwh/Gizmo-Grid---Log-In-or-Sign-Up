@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gizmo Grid - Log In or Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 300px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #CD5C5C;
+            margin-bottom: 20px;
+        }
+        input[type="text"], input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-btn {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: #CD5C5C;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .login-btn:hover {
+            background-color: #FA8072;
+        }
+        .forgot-password {
+            color:#CD5C5C;
+            text-decoration: none;
+        }
+        .signup-link {
+            display: block;
+            margin-top: 20px;
+        }
+        .signup-link a {
+            color:#CD5C5C;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Gizmo Grid</h1>
+        <form>
+            <input type="text" placeholder="Email or Phone Number" required><br>
+            <input type="password" placeholder="Password" required><br>
+            <button type="submit" class="login-btn">Log In</button>
+        </form>
+        <a href="#" class="forgot-password">Forgotten password?</a>
+        <div class="signup-link">
+            <a href="#">Create New Account</a>
+        </div>
+    </div>
+</body>
+</html>
